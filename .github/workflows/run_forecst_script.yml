@@ -30,4 +30,4 @@ jobs:
 
       - name: Run the Python script
         run: |
-          python ../forecast_script_json.py  # Run your python script (adjust path if needed)
+          python ./forecast_script_json.py  # Run your python script (adjust path if needed)
