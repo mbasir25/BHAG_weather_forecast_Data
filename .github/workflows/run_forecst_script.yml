@@ -36,7 +36,7 @@ jobs:
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          git add weatherdata/news_refs/*
+          git add weatherdata/news_refs/forecasted_weather.json
           git commit -m "Add weather forecast data"
           git push
         env:
