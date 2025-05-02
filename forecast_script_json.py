@@ -156,7 +156,18 @@ def generate_json(wd):
 
 # Main driver code
 if __name__ == "__main__":
-    wd = r'weatherdata/news_refs'
-    #wd = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'weatherdata/news_refs')# Specify the working directory
-    data_get(wd)  # Step 1: Download and convert .bin files to CSV
-    generate_json(wd)  # Step 2: Generate and save the JSON file
+    # Get the path to the current script's directory
+    script_dir = os.path.dirname(os.path.abspath(__file__))  # This gets the directory where the script is located
+    
+    # Set the desired folder structure relative to the script's directory
+    wd = os.path.join(script_dir, 'weatherdata', 'news_refs')
+
+    # Check if the directory exists
+    if not os.path.exists(wd):
+        try:
+            os.makedirs(wd)  # Create the folder and any necessary parent directories
+            print(f"Created directory: {wd}")
+        except Exception as e:
+            print(f"Error creating directory: {e}")
+    else:
+        print(f"Directory already exists: {wd}")
