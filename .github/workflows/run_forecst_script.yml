@@ -1,4 +1,4 @@
-name: Run Python Script and Save Files
+name: Run Python Script and Save
 
 on:
   schedule:
