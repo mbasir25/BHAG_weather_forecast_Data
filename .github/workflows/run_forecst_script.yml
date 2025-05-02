@@ -2,7 +2,7 @@ name: Run Python Script Daily
 
 on:
   schedule:
-    - cron: '30 17 * * *'  # This means the script will run at 12 PM (UTC) every day.
+    - cron: '40 17 * * *'  # This means the script will run at 12 PM (UTC) every day.
   # You can also use a specific event to trigger (e.g., push, pull_request, etc.)
 
 jobs:
@@ -25,4 +25,4 @@ jobs:
 
       - name: Run the Python script
         run: |
-          python ../forecast_script_json.py  # Replace with the path to your script.
+          python ../../forecast_script_json.py  # Replace with the path to your script.
