@@ -2,27 +2,27 @@ name: Run Python Script Daily
 
 on:
   schedule:
-    - cron: '10 5 * * *'  # This means the script will run at 12 PM (UTC) every day.
-  # You can also use a specific event to trigger (e.g., push, pull_request, etc.)
+    - cron: '18 5 * * *'  # This runs the script at 1 AM EDT (Indiana) daily (5 AM UTC)
+  workflow_dispatch:  # This allows manual triggering of the workflow from the GitHub UI
 
 jobs:
   run_script:
-    runs-on: ubuntu-latest  # Use the latest Ubuntu environment to run the script.
+    runs-on: ubuntu-latest  # Set up on the latest version of Ubuntu
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2  # Checkout your repository code.
+        uses: actions/checkout@v2
 
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.8'  # Set the Python version to use.
+          python-version: '3.8'  # Define the Python version you want to use
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt  # If you have a requirements.txt
+          pip install -r requirements.txt  # Ensure the dependencies are installed
 
       - name: Run the Python script
         run: |
-          python ../forecast_script_json.py  # Replace with the path to your script.
+          python ../forecast_script_json.py  # Run your python script (adjust path if needed)
