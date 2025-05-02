@@ -2,7 +2,7 @@ name: Run Python Script Daily
 
 on:
   schedule:
-    - cron: '18 5 * * *'  # This runs the script at 1 AM EDT (Indiana) daily (5 AM UTC)
+    - cron: '0 5 * * *'  # This runs the script at 1 AM EDT (Indiana) daily (5 AM UTC)
   workflow_dispatch:  # This allows manual triggering of the workflow from the GitHub UI
 
 jobs:
@@ -17,6 +17,11 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: '3.8'  # Define the Python version you want to use
+
+      - name: Install ECCodes (Dependency for pygrib)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libeccodes-dev  # Install ECCodes library
 
       - name: Install dependencies
         run: |
