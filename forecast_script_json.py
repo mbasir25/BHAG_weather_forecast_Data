@@ -156,7 +156,7 @@ def generate_json(wd):
 
 # Main driver code
 if __name__ == "__main__":
-    #wd = 'weatherdata/news_refs'
-    wd = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'weatherdata/news_refs')# Specify the working directory
+    wd = r'weatherdata/news_refs'
+    #wd = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'weatherdata/news_refs')# Specify the working directory
     data_get(wd)  # Step 1: Download and convert .bin files to CSV
     generate_json(wd)  # Step 2: Generate and save the JSON file
