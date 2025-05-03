@@ -45,5 +45,52 @@
         "2025-05-09": {
             "10 metre wind speed": 3.8067345340642142
         }
+    },
+    "2025-05-03": {
+        "2025-05-03": {
+            "Maximum temperature": 289.2247454972592,
+            "Minimum temperature": 284.2346123727486,
+            "PoP": 65.09631949882537,
+            "10 metre wind speed": 5.572983555207518
+        },
+        "2025-05-04": {
+            "Maximum temperature": 285.671417384495,
+            "Minimum temperature": 280.89537979639783,
+            "PoP": 82.21221613155834,
+            "10 metre wind speed": 5.258104933437746
+        },
+        "2025-05-05": {
+            "Maximum temperature": 287.3624119028974,
+            "Minimum temperature": 281.31276429130776,
+            "PoP": 63.81362568519969,
+            "10 metre wind speed": 3.3212216131558354
+        },
+        "2025-05-06": {
+            "10 metre wind speed": 3.480579483163666,
+            "Maximum temperature": 293.2,
+            "Minimum temperature": 280.8356303837119,
+            "PoP": 10.054032889584965
+        },
+        "2025-05-07": {
+            "Maximum temperature": 294.94698512137825,
+            "Minimum temperature": 283.12709475332804,
+            "PoP": 30.066562255285827,
+            "10 metre wind speed": 3.3380579483163677
+        },
+        "2025-05-08": {
+            "Maximum temperature": 294.0868441660141,
+            "Minimum temperature": 283.2572435395458,
+            "PoP": 15.141738449490994,
+            "10 metre wind speed": 5.3965544244322645
+        },
+        "2025-05-09": {
+            "Maximum temperature": 295.2167580266249,
+            "Minimum temperature": 281.69185591229444,
+            "PoP": 16.962411902897415,
+            "10 metre wind speed": 4.805638214565389
+        },
+        "2025-05-10": {
+            "10 metre wind speed": 3.177916992952233
+        }
     }
 }
