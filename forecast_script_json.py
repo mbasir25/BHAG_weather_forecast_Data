@@ -9,6 +9,7 @@ import requests
 import os
 import pygrib
 import pandas as pd
+import numpy as np
 from datetime import datetime
 import json
 
@@ -85,10 +86,17 @@ def generate_json(wd):
             # Extract latitudes, longitudes, values, and metadata
             lats, lons = grb.latlons()
             values = grb.values  # Extract actual data values
+            print(values)    
             variable_name = grb.name  # Extract the variable name (e.g., wind speed)
             forecast_date = grb.validDate.date()  # Extract the forecast date directly from GRIB file
+            units = grb.units
+            units = units.replace(" ", "")
+            
             if variable_name.lower() == "unknown":
-                variable_name = "PoP" 
+                variable_name = "PoP"
+            if units.lower() == "unknown":
+                units = "%"
+            variable_name = variable_name+'('+units+')'
             
             # Filter the data based on the specified latitude and longitude range
             filter_condition = (lats >= 39.5) & (lats <= 40.4) & (lons >= -87.4) & (lons <= -86.5)
@@ -105,7 +113,7 @@ def generate_json(wd):
                 json_data[today_date][forecast_date_str] = {}
 
             # Add the variable data
-            json_data[today_date][forecast_date_str][variable_name] = avg_value
+            json_data[today_date][forecast_date_str][variable_name] = round(avg_value, 3)
 
     # Process 1-3 Days Forecast (First 3 days)
     bin_files_1_to_3 = [
