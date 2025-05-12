@@ -18,12 +18,10 @@ jobs:
         with:
           python-version: '3.8'  # Define the Python version you want to use
 
-      # Install ECCodes (Dependency for pygrib)
-      - name: Install ECCodes and other dependencies
+      - name: Install ECCodes (Dependency for pygrib)
         run: |
           sudo apt-get update
           sudo apt-get install -y libeccodes-dev  # Install ECCodes library
-          sudo apt-get install -y build-essential  # Install build essentials like gcc, make, etc.
 
       - name: Install dependencies
         run: |
