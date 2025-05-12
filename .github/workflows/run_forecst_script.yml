@@ -16,23 +16,23 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.8'  # Define the Python version you want to use
+          python-version: '3.7'  # Try using Python 3.7 if 3.8 is causing issues
 
       - name: Install ECCodes (Dependency for pygrib)
         run: |
           sudo apt-get update
-          sudo apt-get install -y libeccodes-dev  # Install ECCodes library
+          sudo apt-get install -y libeccodes-dev gfortran  # Install ECCodes and Fortran compilers
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install --use-pep517 pygrib  # Use PEP 517 for building pygrib
-          pip install cython==0.29.24 numpy==1.23.5  # Ensure compatible versions of NumPy and Cython
+          pip install cython==0.29.24 numpy==1.23.5  # Install compatible versions of Cython and NumPy
+          pip install --use-pep517 pygrib  # Install pygrib with PEP 517
           pip install -r requirements.txt
 
       - name: Run the Python script
         run: |
-          python ./forecast_script_json.py  # Run your python script (adjust path if needed)
+          python ./forecast_script_json.py  # Run your Python script (adjust path if needed)
           
       - name: Commit and push generated files
         run: |
