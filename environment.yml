@@ -6,3 +6,4 @@ dependencies:
   - pygrib
   - pandas
   - requests
+  - libtiff  # ✅ This fixes the missing shared object error
