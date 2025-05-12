@@ -13,27 +13,33 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.8'  # Try using Python 3.7 if 3.8 is causing issues
+      - name: Install pyenv and Python 3.7
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
+              libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
+              xz-utils tk-dev libffi-dev liblzma-dev python3-openssl git
+          curl https://pyenv.run | bash
+          echo 'export PATH="$HOME/.pyenv/bin:$PATH"' >> ~/.bashrc
+          echo 'eval "$(pyenv init --path)"' >> ~/.bashrc
+          echo 'eval "$(pyenv init -)"' >> ~/.bashrc
+          source ~/.bashrc
+          pyenv install 3.7.9  # Install Python 3.7.9 (or whichever version you prefer)
+          pyenv global 3.7.9    # Set it as the default version
+
+      - name: Set up Python environment
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt  # Ensure all dependencies are installed
 
       - name: Install ECCodes (Dependency for pygrib)
         run: |
-          sudo apt-get update
-          sudo apt-get install -y libeccodes-dev gfortran  # Install ECCodes and Fortran compilers
-
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install cython==0.29.24 numpy==1.23.5  # Install compatible versions of Cython and NumPy
-          pip install --use-pep517 pygrib  # Install pygrib with PEP 517
-          pip install -r requirements.txt
+          sudo apt-get install -y libeccodes-dev  # Install ECCodes library
 
       - name: Run the Python script
         run: |
-          python ./forecast_script_json.py  # Run your Python script (adjust path if needed)
-          
+          python ./forecast_script_json.py  # Run your python script (adjust path if needed)
+
       - name: Commit and push generated files
         run: |
           git config --global user.name "GitHub Actions"
