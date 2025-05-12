@@ -1,0 +1,48 @@
+{
+    "2025-05-12": {
+        "2025-05-12": {
+            "Maximum temperature(K)": 296.93,
+            "PoP(%)": 36.07,
+            "10 metre wind speed(ms**-1)": 4.203
+        },
+        "2025-05-13": {
+            "Maximum temperature(K)": 297.448,
+            "Minimum temperature(K)": 289.352,
+            "PoP(%)": 62.342,
+            "10 metre wind speed(ms**-1)": 2.103
+        },
+        "2025-05-14": {
+            "Maximum temperature(K)": 299.37,
+            "Minimum temperature(K)": 288.674,
+            "PoP(%)": 25.128,
+            "10 metre wind speed(ms**-1)": 3.036
+        },
+        "2025-05-15": {
+            "10 metre wind speed(ms**-1)": 6.965,
+            "Maximum temperature(K)": 304.028,
+            "Minimum temperature(K)": 290.781,
+            "PoP(%)": 23.329
+        },
+        "2025-05-16": {
+            "Maximum temperature(K)": 301.246,
+            "Minimum temperature(K)": 290.92,
+            "PoP(%)": 16.062,
+            "10 metre wind speed(ms**-1)": 8.448
+        },
+        "2025-05-17": {
+            "Maximum temperature(K)": 299.069,
+            "Minimum temperature(K)": 288.41,
+            "PoP(%)": 10.052,
+            "10 metre wind speed(ms**-1)": 6.918
+        },
+        "2025-05-18": {
+            "Maximum temperature(K)": 296.974,
+            "Minimum temperature(K)": 285.833,
+            "PoP(%)": 17.492,
+            "10 metre wind speed(ms**-1)": 3.873
+        },
+        "2025-05-19": {
+            "10 metre wind speed(ms**-1)": 2.833
+        }
+    }
+}
