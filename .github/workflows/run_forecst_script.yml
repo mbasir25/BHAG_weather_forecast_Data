@@ -2,34 +2,31 @@ name: Run Python Script Daily
 
 on:
   schedule:
-    - cron: '0 5 * * *'
+    - cron: '0 5 * * *'  # Daily at 5 AM UTC
   workflow_dispatch:
 
 jobs:
   run_script:
     runs-on: ubuntu-latest
-    container:
-      image: continuumio/miniconda3  # ✅ Conda image with working environment
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Set up conda environment
-        run: |
-          conda update -n base -c defaults conda
-          conda create -n weather-env python=3.8 -y
-          conda activate weather-env
-          conda install -y -c conda-forge pygrib pandas requests
+      - name: Set up Miniconda
+        uses: conda-incubator/setup-miniconda@v2
+        with:
+          auto-update-conda: true
+          python-version: 3.8
+          environment-file: environment.yml
+          activate-environment: weather-env
+          auto-activate-base: false
 
-      - name: Run forecast script
-        shell: bash -l {0}
+      - name: Run forecast script using conda
         run: |
-          conda activate weather-env
-          python ./forecast_script_json.py
+          conda run -n weather-env python ./forecast_script_json.py
 
       - name: Commit and push generated files
-        shell: bash -l {0}
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
