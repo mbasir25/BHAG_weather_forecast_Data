@@ -18,16 +18,17 @@ jobs:
         with:
           python-version: '3.8'  # Define the Python version you want to use
 
-      - name: Install build dependencies
+      - name: Install ECCodes (Dependency for pygrib)
         run: |
           sudo apt-get update
-          sudo apt-get install -y build-essential cython3 python3-dev libpython3-dev libeccodes-dev
+          sudo apt-get install -y libeccodes-dev  # Install ECCodes library
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          python -m pip install --upgrade cython numpy  # Ensure Cython and NumPy are installed
-          pip install -r requirements.txt  # Ensure the dependencies are installed
+          pip install --use-pep517 pygrib  # Use PEP 517 for building pygrib
+          pip install cython==0.29.24 numpy==1.23.5  # Ensure compatible versions of NumPy and Cython
+          pip install -r requirements.txt
 
       - name: Run the Python script
         run: |
