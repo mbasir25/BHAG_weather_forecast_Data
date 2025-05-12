@@ -1,3 +1,4 @@
+
 name: Run Python Script Daily
 
 on:
@@ -13,39 +14,25 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Install pyenv and Python 3.7
-        run: |
-          # Install dependencies for pyenv
-          sudo apt-get update
-          sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
-              libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
-              xz-utils tk-dev libffi-dev liblzma-dev python3-openssl git
-          curl https://pyenv.run | bash
-          
-          # Add pyenv to shell profile
-          echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
-          echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
-          echo 'eval "$(pyenv init --path)"' >> ~/.bashrc
-          echo 'eval "$(pyenv init -)"' >> ~/.bashrc
-          source ~/.bashrc
-
-          # Install Python 3.7.9 using pyenv
-          pyenv install 3.7.9
-          pyenv global 3.7.9
-
-      - name: Set up Python environment
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt  # Ensure all dependencies are installed
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'  # Define the Python version you want to use
 
       - name: Install ECCodes (Dependency for pygrib)
         run: |
+          sudo apt-get update
           sudo apt-get install -y libeccodes-dev  # Install ECCodes library
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt  # Ensure the dependencies are installed
 
       - name: Run the Python script
         run: |
           python ./forecast_script_json.py  # Run your python script (adjust path if needed)
-
+          
       - name: Commit and push generated files
         run: |
           git config --global user.name "GitHub Actions"
