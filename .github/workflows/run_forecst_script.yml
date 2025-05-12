@@ -16,7 +16,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.7'  # Try using Python 3.7 if 3.8 is causing issues
+          python-version: '3.8'  # Try using Python 3.7 if 3.8 is causing issues
 
       - name: Install ECCodes (Dependency for pygrib)
         run: |
