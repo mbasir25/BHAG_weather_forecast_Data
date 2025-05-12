@@ -2,7 +2,7 @@ name: Run Python Script Daily
 
 on:
   schedule:
-    - cron: '0 5 * * *'  # Daily at 5 AM UTC
+    - cron: '0 5 * * *'
   workflow_dispatch:
 
 jobs:
@@ -12,6 +12,11 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+
+      - name: Install missing system libraries (libtiff)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libtiff5
 
       - name: Set up Miniconda
         uses: conda-incubator/setup-miniconda@v2
@@ -23,7 +28,7 @@ jobs:
           auto-activate-base: false
 
       - name: Run forecast script
-        shell: bash -l {0}  # needed to activate conda
+        shell: bash -l {0}
         run: |
           python ./forecast_script_json.py
 
