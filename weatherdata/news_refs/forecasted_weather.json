@@ -232,5 +232,52 @@
         "2025-05-23": {
             "10 metre wind speed(ms**-1)": 4.263
         }
+    },
+    "2025-05-17": {
+        "2025-05-17": {
+            "Maximum temperature(K)": 294.069,
+            "Minimum temperature(K)": 286.616,
+            "PoP(%)": 2.0,
+            "10 metre wind speed(ms**-1)": 5.714
+        },
+        "2025-05-18": {
+            "Maximum temperature(K)": 296.169,
+            "Minimum temperature(K)": 283.339,
+            "PoP(%)": 1.085,
+            "10 metre wind speed(ms**-1)": 1.992
+        },
+        "2025-05-19": {
+            "Maximum temperature(K)": 294.532,
+            "Minimum temperature(K)": 283.892,
+            "PoP(%)": 36.143,
+            "10 metre wind speed(ms**-1)": 4.549
+        },
+        "2025-05-20": {
+            "10 metre wind speed(ms**-1)": 6.55,
+            "Maximum temperature(K)": 292.199,
+            "Minimum temperature(K)": 285.112,
+            "PoP(%)": 83.153
+        },
+        "2025-05-21": {
+            "Maximum temperature(K)": 290.083,
+            "Minimum temperature(K)": 284.083,
+            "PoP(%)": 63.731,
+            "10 metre wind speed(ms**-1)": 6.88
+        },
+        "2025-05-22": {
+            "Maximum temperature(K)": 290.596,
+            "Minimum temperature(K)": 280.611,
+            "PoP(%)": 21.825,
+            "10 metre wind speed(ms**-1)": 6.476
+        },
+        "2025-05-23": {
+            "Maximum temperature(K)": 293.239,
+            "Minimum temperature(K)": 281.532,
+            "PoP(%)": 16.453,
+            "10 metre wind speed(ms**-1)": 4.546
+        },
+        "2025-05-24": {
+            "10 metre wind speed(ms**-1)": 2.89
+        }
     }
 }
