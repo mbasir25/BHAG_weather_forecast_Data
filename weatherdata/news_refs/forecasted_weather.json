@@ -1454,5 +1454,52 @@
         "2025-06-18": {
             "10 metre wind speed(ms**-1)": 3.065
         }
+    },
+    "2025-06-12": {
+        "2025-06-12": {
+            "Maximum temperature(K)": 302.842,
+            "Minimum temperature(K)": 289.888,
+            "PoP(%)": 1.178,
+            "10 metre wind speed(ms**-1)": 2.574
+        },
+        "2025-06-13": {
+            "Maximum temperature(K)": 300.308,
+            "Minimum temperature(K)": 292.293,
+            "PoP(%)": 50.076,
+            "10 metre wind speed(ms**-1)": 2.853
+        },
+        "2025-06-14": {
+            "Maximum temperature(K)": 300.33,
+            "Minimum temperature(K)": 293.135,
+            "PoP(%)": 71.491,
+            "10 metre wind speed(ms**-1)": 2.802
+        },
+        "2025-06-15": {
+            "10 metre wind speed(ms**-1)": 2.968,
+            "Maximum temperature(K)": 299.601,
+            "Minimum temperature(K)": 291.973,
+            "PoP(%)": 31.809
+        },
+        "2025-06-16": {
+            "Maximum temperature(K)": 301.034,
+            "Minimum temperature(K)": 291.49,
+            "PoP(%)": 40.633,
+            "10 metre wind speed(ms**-1)": 2.523
+        },
+        "2025-06-17": {
+            "Maximum temperature(K)": 302.732,
+            "Minimum temperature(K)": 292.097,
+            "PoP(%)": 38.557,
+            "10 metre wind speed(ms**-1)": 3.439
+        },
+        "2025-06-18": {
+            "Maximum temperature(K)": 302.467,
+            "Minimum temperature(K)": 293.288,
+            "PoP(%)": 47.632,
+            "10 metre wind speed(ms**-1)": 5.082
+        },
+        "2025-06-19": {
+            "10 metre wind speed(ms**-1)": 3.83
+        }
     }
 }
