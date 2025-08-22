@@ -4791,5 +4791,52 @@
         "2025-08-28": {
             "10 metre wind speed(ms**-1)": 1.685
         }
+    },
+    "2025-08-22": {
+        "2025-08-22": {
+            "Maximum temperature(K)": 299.91,
+            "Minimum temperature(K)": 288.992,
+            "PoP(%)": 0.0,
+            "10 metre wind speed(ms**-1)": 1.25
+        },
+        "2025-08-23": {
+            "Maximum temperature(K)": 301.105,
+            "Minimum temperature(K)": 289.744,
+            "PoP(%)": 16.413,
+            "10 metre wind speed(ms**-1)": 2.946
+        },
+        "2025-08-24": {
+            "Maximum temperature(K)": 297.665,
+            "Minimum temperature(K)": 286.408,
+            "PoP(%)": 0.0,
+            "10 metre wind speed(ms**-1)": 4.49
+        },
+        "2025-08-25": {
+            "10 metre wind speed(ms**-1)": 4.264,
+            "Maximum temperature(K)": 295.563,
+            "Minimum temperature(K)": 284.908,
+            "PoP(%)": 2.066
+        },
+        "2025-08-26": {
+            "Maximum temperature(K)": 295.504,
+            "Minimum temperature(K)": 282.727,
+            "PoP(%)": 1.796,
+            "10 metre wind speed(ms**-1)": 2.796
+        },
+        "2025-08-27": {
+            "Maximum temperature(K)": 296.624,
+            "Minimum temperature(K)": 282.142,
+            "PoP(%)": 1.188,
+            "10 metre wind speed(ms**-1)": 1.866
+        },
+        "2025-08-28": {
+            "Maximum temperature(K)": 298.406,
+            "Minimum temperature(K)": 283.937,
+            "PoP(%)": 4.787,
+            "10 metre wind speed(ms**-1)": 2.26
+        },
+        "2025-08-29": {
+            "10 metre wind speed(ms**-1)": 1.427
+        }
     }
 }
