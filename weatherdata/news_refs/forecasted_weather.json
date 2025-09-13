@@ -5825,5 +5825,52 @@
         "2025-09-19": {
             "10 metre wind speed(ms**-1)": 1.967
         }
+    },
+    "2025-09-13": {
+        "2025-09-13": {
+            "Maximum temperature(K)": 303.175,
+            "Minimum temperature(K)": 288.12,
+            "PoP(%)": 21.441,
+            "10 metre wind speed(ms**-1)": 2.759
+        },
+        "2025-09-14": {
+            "Maximum temperature(K)": 304.932,
+            "Minimum temperature(K)": 290.684,
+            "PoP(%)": 5.908,
+            "10 metre wind speed(ms**-1)": 2.503
+        },
+        "2025-09-15": {
+            "Maximum temperature(K)": 305.997,
+            "Minimum temperature(K)": 290.576,
+            "PoP(%)": 0.561,
+            "10 metre wind speed(ms**-1)": 2.366
+        },
+        "2025-09-16": {
+            "10 metre wind speed(ms**-1)": 1.548,
+            "Maximum temperature(K)": 305.795,
+            "Minimum temperature(K)": 290.134,
+            "PoP(%)": 0.892
+        },
+        "2025-09-17": {
+            "Maximum temperature(K)": 305.559,
+            "Minimum temperature(K)": 289.446,
+            "PoP(%)": 1.789,
+            "10 metre wind speed(ms**-1)": 1.373
+        },
+        "2025-09-18": {
+            "Maximum temperature(K)": 304.925,
+            "Minimum temperature(K)": 290.268,
+            "PoP(%)": 7.118,
+            "10 metre wind speed(ms**-1)": 2.288
+        },
+        "2025-09-19": {
+            "Maximum temperature(K)": 302.307,
+            "Minimum temperature(K)": 289.763,
+            "PoP(%)": 18.282,
+            "10 metre wind speed(ms**-1)": 2.873
+        },
+        "2025-09-20": {
+            "10 metre wind speed(ms**-1)": 2.592
+        }
     }
 }
