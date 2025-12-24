@@ -10619,5 +10619,52 @@
         "2025-12-30": {
             "10 metre wind speed(ms**-1)": 2.855
         }
+    },
+    "2025-12-24": {
+        "2025-12-24": {
+            "Maximum temperature(K)": 285.901,
+            "Minimum temperature(K)": 272.942,
+            "PoP(%)": 15.342,
+            "10 metre wind speed(ms**-1)": 3.758
+        },
+        "2025-12-25": {
+            "Maximum temperature(K)": 284.969,
+            "Minimum temperature(K)": 281.171,
+            "PoP(%)": 11.034,
+            "10 metre wind speed(ms**-1)": 2.947
+        },
+        "2025-12-26": {
+            "Maximum temperature(K)": 290.976,
+            "Minimum temperature(K)": 280.169,
+            "PoP(%)": 37.854,
+            "10 metre wind speed(ms**-1)": 4.538
+        },
+        "2025-12-27": {
+            "10 metre wind speed(ms**-1)": 3.839,
+            "Maximum temperature(K)": 290.448,
+            "Minimum temperature(K)": 280.601,
+            "PoP(%)": 1.127
+        },
+        "2025-12-28": {
+            "Maximum temperature(K)": 280.888,
+            "Minimum temperature(K)": 276.714,
+            "PoP(%)": 25.666,
+            "10 metre wind speed(ms**-1)": 7.586
+        },
+        "2025-12-29": {
+            "Maximum temperature(K)": 267.836,
+            "Minimum temperature(K)": 261.724,
+            "PoP(%)": 2.251,
+            "10 metre wind speed(ms**-1)": 6.124
+        },
+        "2025-12-30": {
+            "Maximum temperature(K)": 270.836,
+            "Minimum temperature(K)": 261.802,
+            "PoP(%)": 0.999,
+            "10 metre wind speed(ms**-1)": 4.601
+        },
+        "2025-12-31": {
+            "10 metre wind speed(ms**-1)": 3.422
+        }
     }
 }
