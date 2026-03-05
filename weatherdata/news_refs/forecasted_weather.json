@@ -13862,5 +13862,52 @@
         "2026-03-11": {
             "10 metre wind speed(ms**-1)": 5.845
         }
+    },
+    "2026-03-05": {
+        "2026-03-05": {
+            "Maximum temperature(K)": 291.127,
+            "Minimum temperature(K)": 283.792,
+            "PoP(%)": 65.72,
+            "10 metre wind speed(ms**-1)": 2.511
+        },
+        "2026-03-06": {
+            "Maximum temperature(K)": 296.274,
+            "Minimum temperature(K)": 284.29,
+            "PoP(%)": 48.772,
+            "10 metre wind speed(ms**-1)": 7.444
+        },
+        "2026-03-07": {
+            "Maximum temperature(K)": 292.086,
+            "Minimum temperature(K)": 288.789,
+            "PoP(%)": 77.223,
+            "10 metre wind speed(ms**-1)": 6.161
+        },
+        "2026-03-08": {
+            "10 metre wind speed(ms**-1)": 4.36,
+            "Maximum temperature(K)": 288.592,
+            "Minimum temperature(K)": 277.134,
+            "PoP(%)": 1.961
+        },
+        "2026-03-09": {
+            "Maximum temperature(K)": 294.369,
+            "Minimum temperature(K)": 280.153,
+            "PoP(%)": 6.276,
+            "10 metre wind speed(ms**-1)": 6.348
+        },
+        "2026-03-10": {
+            "Maximum temperature(K)": 295.281,
+            "Minimum temperature(K)": 287.683,
+            "PoP(%)": 69.697,
+            "10 metre wind speed(ms**-1)": 8.108
+        },
+        "2026-03-11": {
+            "Maximum temperature(K)": 287.378,
+            "Minimum temperature(K)": 282.377,
+            "PoP(%)": 69.909,
+            "10 metre wind speed(ms**-1)": 8.087
+        },
+        "2026-03-12": {
+            "10 metre wind speed(ms**-1)": 5.879
+        }
     }
 }
